@@ -188,7 +188,7 @@ button:hover {
 }
 
 /*------------MEDIAQUERIES------------*/
-@media (min-width: 768px) {
+@media (max-width: 0px)  {
   .site-main {
     grid-template-columns: repeat(3, 1fr);
   }
