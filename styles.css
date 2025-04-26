@@ -80,8 +80,8 @@ a {
 }
 
 .profile-image {
-  width: 250px;
-  height: 250px;
+  width: 100%; 
+  max-width: 250px; 
   border-radius: 50%;
   object-fit: cover;
   box-shadow: var(--shadow);
@@ -124,7 +124,8 @@ h2 {
 
 
 .project-card img {
-  width: 600px; 
+  width: 100%;
+  max-width: 600px; 
   height: auto; 
   border-radius: 8px;
   margin-bottom: 0.5rem;
@@ -189,17 +190,16 @@ button:hover {
 }
 
 /*------------MEDIAQUERIES------------*/
-/* Para escritorio: cambiamos a 2 columnas */
-@media (min-width: 412px) {
+@media (min-width: 390px) {
   .site-main {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
   }
-  
+
   .site-main {
-    grid-template-columns: 1fr; /* Sigue en una columna */
-    padding: 1.5rem; /* Un pequeño ajuste para mejor visual en 412px */
+    grid-template-columns: 1fr; 
+    padding: 1.5rem; 
   }
 
   .site-footer {
