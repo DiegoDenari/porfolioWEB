@@ -190,24 +190,34 @@ button:hover {
 }
 
 /*------------MEDIAQUERIES------------*/
-@media (min-width: 390px) {
+@media (min-width: 412px) {
   .site-main {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
-  }
-
-  .site-main {
-    grid-template-columns: 1fr; 
-    padding: 1.5rem; 
+    padding: 1.5rem;
   }
 
   .site-footer {
     flex-direction: column;
     align-items: center;
-    text-align: center;
     gap: 1.5rem;
     padding: 2rem 1rem;
+  }
+}
+
+/* Ajustes para pantallas más grandes (tablets, desktops) */
+@media (min-width: 768px) {
+  .site-main {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    padding: 3rem;
+  }
+
+  .site-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    text-align: left;
   }
 }
 
