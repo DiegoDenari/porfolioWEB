@@ -6,7 +6,7 @@
   --background-color: #F8F9FA; 
   --white: #ffffff;
   --text-color: #1e1e2f;
-  --detail-color: #ffd65b; 
+  --detail-color: #1000f7; 
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -22,7 +22,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--detail-color);
 }
 
 /*------------HEADER------------*/
@@ -80,8 +80,8 @@ a {
 }
 
 .profile-image {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: var(--shadow);
@@ -109,6 +109,7 @@ h2 {
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   color: var(--white);
   padding: 1rem;
+  text-align: center;
   border-radius: 8px;
   margin-bottom: 1rem;
   box-shadow: var(--shadow);
@@ -123,8 +124,8 @@ h2 {
 
 
 .project-card img {
-  width: 100%;
-  height: auto;
+  width: 600px; 
+  height: auto; 
   border-radius: 8px;
   margin-bottom: 0.5rem;
 }
